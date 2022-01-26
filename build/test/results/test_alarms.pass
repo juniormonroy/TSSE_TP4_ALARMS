@@ -4,15 +4,35 @@
   :file: test_alarms.c
 :successes:
 - :test: test_encender_alarma_hh
-  :line: 20
+  :line: 39
+  :message: ''
+  :unity_test_time: 0
+- :test: test_encender_alarma_h
+  :line: 39
+  :message: ''
+  :unity_test_time: 0
+- :test: test_encender_alarma_l
+  :line: 56
+  :message: ''
+  :unity_test_time: 0
+- :test: test_encender_alarma_ll
+  :line: 64
+  :message: ''
+  :unity_test_time: 0
+- :test: test_sin_alarma_nivel_normal
+  :line: 72
+  :message: ''
+  :unity_test_time: 0
+- :test: test_encendido_alarma_invalida
+  :line: 87
   :message: ''
   :unity_test_time: 0
 :failures: []
 :ignores: []
 :counts:
-  :total: 1
-  :passed: 1
+  :total: 6
+  :passed: 6
   :failed: 0
   :ignored: 0
 :stdout: []
-:time: 0.0008917079994716914
+:time: 0.0011726559987437213

@@ -11,6 +11,11 @@ char* GlobalOrderError;
 extern void setUp(void);
 extern void tearDown(void);
 extern void test_encender_alarma_hh(void);
+extern void test_encender_alarma_h();
+extern void test_encender_alarma_l();
+extern void test_encender_alarma_ll();
+extern void test_sin_alarma_nivel_normal();
+extern void test_encendido_alarma_invalida();
 
 
 /*=======Mock Management=====*/
@@ -78,7 +83,12 @@ static void run_test(UnityTestFunction func, const char* name, UNITY_LINE_TYPE l
 int main(void)
 {
   UnityBegin("test_alarms.c");
-  run_test(test_encender_alarma_hh, "test_encender_alarma_hh", 20);
+  run_test(test_encender_alarma_hh, "test_encender_alarma_hh", 39);
+  run_test(test_encender_alarma_h, "test_encender_alarma_h", 39);
+  run_test(test_encender_alarma_l, "test_encender_alarma_l", 56);
+  run_test(test_encender_alarma_ll, "test_encender_alarma_ll", 64);
+  run_test(test_sin_alarma_nivel_normal, "test_sin_alarma_nivel_normal", 72);
+  run_test(test_encendido_alarma_invalida, "test_encendido_alarma_invalida", 87);
 
   return UnityEnd();
 }
